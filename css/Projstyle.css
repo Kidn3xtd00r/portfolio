@@ -1,0 +1,146 @@
+/**PROJECTS SECTION**/
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+#Projects{
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    animation: breathe 2s ease-in-out infinite;
+    margin-top: 140px;
+    
+}
+.Projs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    text-align: center;
+    padding: 5px;
+}
+.Class{
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    height: 180px;
+    animation: slideIn 2s ease forwards ;
+}
+button{
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 5px;
+}
+button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    transition: 0.8s ease;
+}
+.Class:hover{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    transition: 0.6s ease;
+}
+@keyframes slideIn{
+    0%{
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+#footer{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    gap: 5px;
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer a{
+    color: aliceblue;
+    text-decoration: none;
+    background-color: rgba(240, 248, 255, 0.217);
+    padding: 10px;
+    border-radius: 50px;
+}
+#footer a:hover{
+    transform: translateY(-8px) scale(1.05);
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+#footer p{
+    font-size: 20px;
+    padding: 0 0 0 60px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+    padding: 0px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.685);
+    width: 98%;
+}
+.Name{
+    align-items: center;
+    padding: 18px 20px;
+    color: cyan;
+    font-size: 40px;
+    animation: breathe 2s ease-in-out infinite;
+}
+
+nav ul{
+    list-style-type: none;
+    display:flex ;
+    border: 2px solid;
+    padding: 18px 20px;
+    border-radius: 50px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+nav li a{
+    text-decoration: none;
+    padding: 14px 16px;
+    color: rgb(255, 255, 255);
+}
+nav li a:hover{
+    background-color: rgba(255, 255, 255, 0.237);
+    color: aliceblue;
+    border-radius: 50px;
+}
+nav li a:active{
+    background-color: rgba(255, 255, 255, 0.237);
+    color: aliceblue;
+    border-radius: 50px;
+}
+.navlinks{
+    position: relative;
+}
+.dropdown1{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    padding: 10px;
+    gap: 25px;
+
+}
+.navlinks:hover .dropdown1{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.799);
+}

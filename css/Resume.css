@@ -1,0 +1,121 @@
+/**RESUME PAGE**/
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    text-align: start;
+    font-size: 30px;
+    padding-top: 90px;
+    justify-content: center;
+}
+table{
+    border: 2px solid white;
+    padding: 20px;
+    text-align: left;
+    border-spacing: 50px;
+    animation: slideIn 1s ease-in;
+}
+.Head{
+    background-color: aliceblue;
+    color: black;
+    font-weight: 100;
+
+}
+
+@keyframes slideIn{
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+#footer{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    gap: 5px;
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer a{
+    color: aliceblue;
+    text-decoration: none;
+    background-color: rgba(240, 248, 255, 0.217);
+    padding: 10px;
+    border-radius: 50px;
+}
+#footer a:hover{
+    transform: translateY(-8px) scale(1.05);
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+#footer p{
+    font-size: 20px;
+    padding: 0 0 0 60px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+    padding: 0px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.685);
+    width: 98%;
+}
+.Name{
+    align-items: center;
+    padding: 18px 20px;
+    color: cyan;
+    font-size: 40px;
+    animation: breathe 2s ease-in-out infinite;
+}
+
+nav ul{
+    list-style-type: none;
+    display:flex ;
+    border: 2px solid;
+    padding: 18px 20px;
+    border-radius: 50px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+nav li a{
+    text-decoration: none;
+    padding: 14px 16px;
+    color: rgb(255, 255, 255);
+}
+nav li a:hover{
+    background-color: rgba(255, 255, 255, 0.237);
+    color: aliceblue;
+    border-radius: 50px;
+}
+nav li a:active{
+    background-color: rgba(255, 255, 255, 0.237);
+    color: aliceblue;
+    border-radius: 50px;
+}
+.navlinks{
+    position: relative;
+}
+.dropdown1{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    padding: 10px;
+    gap: 25px;
+
+}
+.navlinks:hover .dropdown1{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.799);
+}
+
