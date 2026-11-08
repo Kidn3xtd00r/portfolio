@@ -1,0 +1,17 @@
+# dependencies and build output
+node_modules/
+dist/
+
+# secrets: never commit these
+.env
+.env.*
+!.env.example
+
+# Python caches (tools/)
+__pycache__/
+*.pyc
+
+# operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
